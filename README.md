@@ -15,6 +15,6 @@ To filter top n genes g which shows significance both in literature and GWAS res
 AGACGraphicalModel/generate_IGAP.py
  
 ## Mutation Data Bridging: 
-to bridge all pdg and fdg and predict new gene disease associations. 
+To bridge all pdg and fdg and predict new gene disease associations.  
 AGACGraphicalModel/inference_fusion_vvv.py
 

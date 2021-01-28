@@ -6,13 +6,15 @@ GDAMDB and NOT to implement it note to note and at the same time I will
 
 ![avatar](picture/workflow.png)
 
-The main work flow contain two parts.
+## Extract mutation triples from PubMed articles: 
+To extract mutation type fdg from a targeted text resource in terms of a specific disease d.
+BERT_multi_task_/zky_run_join_multi.sh
+ 
+## Synchronization Filter: 
+To filter top n genes g which shows significance both in literature and GWAS research.
+AGACGraphicalModel/generate_IGAP.py
+ 
+## Mutation Data Bridging: 
+to bridge all pdg and fdg and predict new gene disease associations. 
+AGACGraphicalModel/inference_fusion_vvv.py
 
-
-## Extract mutation triples from pubmed articles
-
-
-
-
-
-## data fusion based on GDAMDB module.

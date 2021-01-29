@@ -1,7 +1,7 @@
 # Data Collection
 The **MutationTypeData** folder contains the abstracts related to the interested disease in json files that are downloaded from PubTator. The json files need to be processed to BIO format, the example of which is located at **BERT_multi_task/data/BIO_example.txt**
 
-`python MutationTypeData/json2bio.py --input MutationTypeData/ --output BERT_multi_task/data/BIO_example.txt`
+    python MutationTypeData/json2bio.py --input MutationTypeData/ --output BERT_multi_task/data/BIO_example.txt
 
 The **MutationAssociationData** contains the GWAS summary data related to the intereseted disease, and the example is **GWASsummaryData_example.txt** which can be replaced by other GWAS summary data. 
 

@@ -30,13 +30,16 @@ REG -- mutation without direction.
 In the subsequent data fusion process, only GOF mutations and LOF mutations are utilized.*  
 
 **Usage:**  
-`bash zky_run_join_multi.sh`
+
+    bash zky_run_join_multi.sh
 
  
 ## Synchronization Filter:  
 To filter top n genes g which shows significance both in literature and GWAS research.   
-**usage:**
-`python generate_IGAP.py [threshold] [use_p_norm] [norm_value] [file_name]`
+**usage:**   
+
+    python generate_IGAP.py [threshold] [use_p_norm] [norm_value] [file_name]   
+    
 **\[threshold]:** The threshold of p-value. The Gene with greater p-value of the threshold will be saved;  
 **\[use_p_norm]:** True, p-value greater than threshold are assigned with 0.5;  
 **\[norm_value]:** False, p-value unchange;  
@@ -47,7 +50,9 @@ The output file is located in **data/sorted_IGAP.txt**
 ## Mutation Data Bridging: 
 To bridge all pdg and fdg and predict new gene disease associations.   
 **usage:**  
-`python inference_fusion_vvv.py [initlambda] [threshold] [times] [filter_count] [rounders] [hidden_factors] [inputfile] [outputfolder]`  
+
+    python inference_fusion_vvv.py [initlambda] [threshold] [times] [filter_count] [rounders] [hidden_factors] [inputfile] [outputfolder] 
+
 **\[initlambda]:** 240, the hyper-parameter;  
 **\[threshold]:** 5e-8, The threshold of p-value;  
 **\[times]:** 500, xxx;  

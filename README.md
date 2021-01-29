@@ -20,6 +20,10 @@ BERT_multi_task_/zky_run_join_multi.sh
 ## Synchronization Filter: 
 To filter top n genes g which shows significance both in literature and GWAS research. 
 AGACGraphicalModel/generate_IGAP.py
+input: MutationAssociationData/GWASsummaryData_example.txt 
+       pubtator_Alzheimer'sdisease.txt/// pubtator_example.txt
+       
+output: IGAP.txt
  
 ## Mutation Data Bridging: 
 To bridge all pdg and fdg and predict new gene disease associations.  

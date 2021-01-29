@@ -1,3 +1,8 @@
+# Data Collection
+The MutationTypeData folder contains the abstracts related to the interested disease in json files that are downloaded from PubTator. The json files need to be processed to BIO format, the example of which is located at BERT_multi_task/data/BIO_example.txt
+
+The MutationAssociationData contains the GWAS summary data related to the intereseted disease. By using the SNP mapping tool bedtools, the SNPs in this file can be mapped to specific genes, and the p-value of the gene equals to the SNP with highest p-value.
+
 # GDAMDB
 The purpose of this repository is to demonstrate the workflow of 
 GDAMDB and NOT to implement it note to note and at the same time I will

@@ -1,9 +1,9 @@
 # Data Collection
-The **MutationTypeData** folder contains the abstracts related to the interested disease in json files that are downloaded from PubTator(https://www.ncbi.nlm.nih.gov/research/pubtator/). In the case when ones would like to collect all literature data related to an interested disease, please search the disease name in PubTator database and download all the json files. Subsequently, these json files need to be processed to BIO format, and the following python script works to convert all the json files into an all-in-one txt file. An example is located at **BERT_multi_task/data/BIO_example.txt**.
+The **MutationTypeData** folder contains the abstracts related to the interested disease in json files that are downloaded from PubTator (https://www.ncbi.nlm.nih.gov/research/pubtator/). In the case when ones would like to collect all literature data related to an interested disease, please search the disease name in PubTator database and download all the json files. Subsequently, these json files need to be processed to BIO format, and the following python script works to convert all the json files into an all-in-one txt file. An example is located at **BERT_multi_task/data/BIO_example.txt**.
 
     python MutationTypeData/json2bio.py --input MutationTypeData/ --output BERT_multi_task/data/BIO_example.txt
 
-The **MutationAssociationData** contains the GWAS summary data related to the intereseted disease, and the example is **GWASsummaryData_example.txt** which can be replaced by other GWAS summary data. 
+The **MutationAssociationData** contains the GWAS summary data related to the intereseted disease. For the disease under consideration, GWAS summary data need to be collected from resources like GWAS Catalog (https://www.ebi.ac.uk/gwas/). Please be sure to include both SNP rs id and p-value in the file. An example with proper format is shown in **MutationAssociationData/GWASsummaryData_example.txt**. 
 
 Before data fusion, the SNPs in this file need to be mapped to specific genes. In our work, we applied **bedtools** with the mapping rule that the p-value of the gene equals to the SNP with highest p-value. The result should be procedded as the same format as **sorted_IGAP.csv**, which is the example mapping output.
 

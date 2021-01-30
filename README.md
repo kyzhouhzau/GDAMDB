@@ -51,9 +51,9 @@ To bridge all pdg and fdg and predict new gene disease associations.
 
 **\[initlambda]:** 240, the hyper-parameter;  
 **\[threshold]:** 5e-8, The threshold of p-value;  
-**\[times]:** 500, xxx;  
-**\[filter_count]:**  
-**\[rounders]:**  100, the number of the iteration rounds.
+**\[times]:** 100, to record the result at round 100 in iteration;  
+**\[filter_count]:** 80, freguency hyper-parameter, to ensure the stable output.
+**\[rounders]:**  100, the number of the iteration rounds.  
 **\[hidden_factors]:**  
 **\[inputfile]:** data/sorted_IGAP.txt, the result file from Synchronization Filter.
 **\[outputfolder]:** generate/IGAP_Wilcoxon/, the outputfolder.

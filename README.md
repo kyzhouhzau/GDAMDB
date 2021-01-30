@@ -10,7 +10,7 @@ Prior to data fusion, the SNPs in this file need to be mapped to specific genes.
 
 # GDAMDB
 GDAMDB is an abbreviation of "Gene-Disease Association prediction by Mutation Data Bridging". This is a pipeline with sevaral steps.  
-![avatar](picture/workflow.png)
+![avatar](workflow.png)
 
 ## Extract mutation triples from PubMed: 
 To extract mutation type fdg from a targeted text resource in terms of a specific disease d.  

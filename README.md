@@ -5,7 +5,7 @@ The **MutationTypeData** folder contains all the abstracts (with json file type)
 
 The **MutationAssociationData** contains the GWAS summary data related to the intereseted disease. For the disease under consideration, GWAS summary data need to be collected from resources like GWAS Catalog (https://www.ebi.ac.uk/gwas/). Please be sure to include both SNP rs id and p-value in the file. An example with proper format is shown in **MutationAssociationData/GWASsummaryData_example.txt**. 
 
-Prior to data fusion, the SNPs in this file need to be mapped to specific genes. In our work, we applied **bedtools** (https://bedtools.readthedocs.io/en/latest/) to map SNPs to the corresponding genes. Then, the mutation association value of a gene, $p_{dg}$, is assigned by the most highest p-value of a SNP corresponed to this gene. Please carefully prepare the output file following the format of **MutationAssociationData/sorted_IGAP.csv**.
+Prior to data fusion, the SNPs in this file need to be mapped to specific genes. As an efficient tool, **bedtools** (https://bedtools.readthedocs.io/en/latest/) is applied to map SNPs to the corresponding genes. Then, the mutation association value of a gene, $p_{dg}$, is assigned by the most highest p-value of a SNP corresponed to this gene. Please carefully prepare the output file following the format of **MutationAssociationData/sorted_IGAP.csv**.
 
 
 # GDAMDB

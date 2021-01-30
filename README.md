@@ -9,11 +9,7 @@ Prior to data fusion, the SNPs in this file need to be mapped to specific genes.
 
 
 # GDAMDB
-The purpose of this repository is to demonstrate the workflow of 
-GDAMDB and NOT to implement it note to note and at the same time I will
- try not to miss out on the major bits discussed in the paper.
- For that matter, I'll be using the following dataset.
-
+GDAMDB is an abbreviation of "Gene-Disease Association prediction by Mutation Data Bridging". This is a pipeline with sevaral steps.  
 ![avatar](picture/workflow.png)
 
 ## Extract mutation triples from PubMed: 

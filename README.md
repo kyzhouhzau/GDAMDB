@@ -9,7 +9,7 @@ Prior to data fusion, the SNPs in this file need to be mapped to specific genes.
 
 
 # GDAMDB
-GDAMDB is an abbreviation of "Gene-Disease Association prediction by Mutation Data Bridging". This is a pipeline with sevaral steps.  
+GDAMDB is an abbreviation of "Gene-Disease Association prediction by Mutation Data Bridging". This is a pipeline with sevaral steps. Please follow the below directions to run the pipeline scripts.
 ![avatar](workflow.png)
 
 ## Extract mutation triples from PubMed: 
@@ -59,3 +59,4 @@ To bridge all pdg and fdg and predict new gene disease associations.
 **\[outputfolder]:** generate/IGAP_Wilcoxon/, the outputfolder.
 
 
+*Feel free to leave us feedbacks, if you have any further questions.*

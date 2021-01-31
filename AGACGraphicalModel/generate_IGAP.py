@@ -153,7 +153,7 @@ def countgenefunctionpair(gene2function):
 def main():
     args = sys.argv
     if len(args)<=3:
-        print("USAGE: python generate.py [threlod] [use_p_norm] [norm_value] [file_name]")
+        print("USAGE: python generate.py [threshold] [use_p_norm] [norm_value] [file_name]")
         print("USAGE note: [threshold]=[Arg1]/751851 \n USAGE note: [use_p_norm]=True, p-value greater than threshold are assigned with 0.5; [use_p_norm]=False, p-value unchange.")
         exit()
     threlod = args[1]

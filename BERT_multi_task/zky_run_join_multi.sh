@@ -2,9 +2,9 @@
 
 filter_tag="True"
 do_train="False"
-input_dir="/mnt/disk2/kyzhou/毕业设计第一部分/biofilter"
-output_dir="filter_dir"
-specific_outputdir="target94"
+input_dir="data/"
+output_dir="../AGACGraphicalModel/data/"
+
 # disease="BLCA"
 while getopts i:f:t:o:d:h OPTION
 do
@@ -42,10 +42,10 @@ do
         --train_batch_size=7   \
         --learning_rate=2e-5   \
         --num_train_epochs=1000   \
-        --output_dir=./output/$output_dir/$specific_outputdir \
+        --output_dir=./output/$output_dir \
         --disease=$disease \
 
-    perl conlleval.pl -d '\t' < ./output/$output_dir/$specific_outputdir/label_test_$disease.txt
+    perl conlleval.pl -d '\t' < ./output/$output_dir/label_test_$disease.txt
 
-    python zky_get_pmids_function_pairsx.py output/$output_dir/$specific_outputdir $disease
+    python zky_get_pmids_function_pairsx.py output/$output_dir $disease
 done
